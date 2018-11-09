@@ -1,0 +1,7 @@
+echo "history requested to be executed:"
+echo "$(fc -l $1 $2)"
+echo
+echo "Executing the above commands"
+echo
+
+eval "$(fc -ln $1 $2)"
